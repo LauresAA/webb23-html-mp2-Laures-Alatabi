@@ -1,0 +1,39 @@
+body{
+    margin:0;
+
+}
+
+.navbar {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    margin: 0;
+    padding: 0;
+    height:auto;
+  overflow: hidden;
+    
+  }
+  
+  .navbar li {
+    display: inline-block;
+    font-style: none;
+    position: relative;
+    float: right;
+  }
+  
+  .navbar li a {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 15px;
+   
+    
+  }
+  
+  /*Makes navbar change color when hovering*/
+  ul li:hover {
+    background: rgb(143, 141, 141);
+  }
