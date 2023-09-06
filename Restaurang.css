@@ -1,9 +1,25 @@
+html{
+  height: 100%;
+}
+
 body{
+  background-color: #c5c0c0;
     margin:0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
 
 }
+
+/*navbar*/
 nav{
   text-align:right;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav ul{
     
@@ -39,16 +55,13 @@ nav ul{
 
   }
 
-
+  /*footer*/
   .footer{
-  position:fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-
-justify-content: center;
-  background-color: red;
+  margin-top: auto;
+  background-color: rgb(59, 59, 59);
   color: white;
+  
+  
   }
 
   #adress{
@@ -64,3 +77,67 @@ text-align: left;
 text-align: right;
 
   }
+
+
+  /* front page image*/
+  .picture {
+    width: 100%;
+    height: 400px; 
+    background-image: url('https://fivepointspizza.com/wp-content/uploads/2019/02/home-hero.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* text about the restaurant*/
+.about{
+text-align: center;
+
+}
+
+/*pictures of menu in front page*/
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;
+  margin: 20px; 
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+/*menu items*/
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 200px; 
+  height: 150px; 
+  object-fit: cover;
+}
+
+.menu-header {
+  grid-column: span 3; 
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
