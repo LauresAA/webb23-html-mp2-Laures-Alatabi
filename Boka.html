@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,66 @@
     <link rel="stylesheet" type="text/css" href="Restaurang.css">
     <title>Lokal Restaurang</title>
 </head>
+
 <body>
     <nav>
-    <ul>
-        <li><a href="index.html">Start</a></li>
-        <li><a href="Boka.html">Boka bord</a></li>
-        <li><a href="Meny.html">Meny</a></li>
-        
-    </ul>
-</nav>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="Boka.html">Boka bord</a></li>
+            <li><a href="Meny.html">Meny</a></li>
+
+        </ul>
+    </nav>
+
+    
+    <form action="resultat.html" method="GET">
+    <div>
+        <label for="name">Namn</label>
+        <input type="text" name ="name" id="name" placeholder="Namn" required>
+    </div>
+
+    <div>
+        <label for="people">Antal personer</label>
+        <input type="number" name="people" id="people" max="10" min="1" required>
+    </div>
+
+    <div>
+        <label for="date">Datum</label>
+        <input type="date" name="date" id="date">
+    </div>
+
+    <div>
+        <label for="time">Tid</label>
+        <input type="time" name="time" id="time">
+    </div>
+
+    <div>
+        <button>Boka</button>
+    </form>
+</div>
+
+
+
+<footer>
+    <div class="footertext">
+    <p>Adress: Oxie kyrkoväg 206, 238 34 Oxie</p>
+    <br>
+    <p>Facebook:
+        <a href="urang
+        Facebook
+        https://www.facebook.com › CasaBiancaR">Restaurang</a>
+    <br>
+    <br>   
+tel: 040-54- 43 00 </p>
+
+
+
+ <br>
+    <p>öppettider: måndag-fredag 10-22 <br>  
+    lördag 12-00 <br>
+    söndag; stängt</p>
+
+</footer>
 
 </body>
 </html>
